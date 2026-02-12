@@ -6,8 +6,5 @@ export async function onRequest(context) {
         server.accept();
         return new Response(null, { status: 101, webSocket: client });
     }
-    return new Response("Airtel Research: Active", { 
-        status: 200, 
-        headers: { "Content-Type": "text/plain" } 
-    });
+    return new Response("Airtel Research: Active", { status: 200 });
 }
